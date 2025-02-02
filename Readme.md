@@ -24,7 +24,7 @@ A robust FAQ management system built with Node.js, Express, Adminjs and MongoDB,
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/SahilR2/Vibhin_Bhasha.git
 cd faq-management-system
 ```
 
