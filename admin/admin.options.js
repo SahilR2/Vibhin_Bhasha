@@ -1,7 +1,6 @@
 import { AdminJS } from 'adminjs';
 import * as AdminJSMongoose from '@adminjs/mongoose';
 import { FAQ } from '../models/faq.model.js';
-// import { translationService } from '../services/translation.service.js';
 
 AdminJS.registerAdapter(AdminJSMongoose);
 

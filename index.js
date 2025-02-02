@@ -6,7 +6,7 @@ import { connectDB } from './config/databse.js';
 import { adminOptions } from './admin/admin.options.js';
 import cors from 'cors';
 import session from 'express-session';
-
+import faqRoutes from './routes/faq.routes.js';
 
 // dotenv.config();
 
@@ -27,6 +27,8 @@ app.use(session({
 const admin = new AdminJS(adminOptions);
 const adminRouter = AdminJSExpress.buildRouter(admin);
 app.use(admin.options.rootPath, adminRouter);
+
+app.use('/api/faqs', faqRoutes);
 
 
 app.listen(port, () => {
