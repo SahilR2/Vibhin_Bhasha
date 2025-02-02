@@ -1,6 +1,6 @@
 import express from 'express';
 import { FAQ } from '../models/faq.model.js';
-import { translationService } from '../services/translation.service.js';
+
 
 const router = express.Router();
 
